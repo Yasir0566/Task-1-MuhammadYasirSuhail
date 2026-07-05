@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  background: linear-gradient(180deg, linen 0%, moccasin 100%);
+  color: saddleBrown;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0;
+  color: floralWhite;
+  background: linear-gradient(135deg, burlyWood 0%, peru 100%);
+  box-shadow: 0 18px 50px sienna;
+}
+
+h1,
+h2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-size: clamp(2.4rem, 10vw, 4.25rem);
+  line-height: 0.95;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  line-height: 1.4;
+  opacity: 0.95;
+}
+
+.site-nav {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.mode-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: oldLace;
+  border: 1px solid wheat;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px tan;
+}
+
+.mode-list li {
+  list-style: none;
+}
+
+.mode-button {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: saddleBrown;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.8rem 0.65rem;
+  text-align: center;
+  border: none;
+  border-radius: 0.9rem;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mode-button:hover,
+.mode-button:focus-visible {
+  background: moccasin;
+  color: maroon;
+  transform: translateY(-1px);
+  outline: none;
+  box-shadow: 0 8px 18px sienna;
+}
+
+.mode-button:focus-visible {
+  outline: 2px solid maroon;
+  outline-offset: 2px;
+}
+
+.mode-button.is-active {
+  background: moccasin;
+  color: maroon;
+  box-shadow: 0 8px 18px sienna;
+}
+
+main {
+  padding: 0 1rem 2rem;
+}
+
+.timer-card {
+  max-width: 34rem;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: oldLace;
+  border: 1px solid wheat;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px tan;
+}
+
+.timer-card h3 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: saddleBrown;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.timer-label,
+.timer-state {
+  margin: 0.75rem 0 0;
+  font-family: "Inter", sans-serif;
+  color: saddleBrown;
+}
+
+.timer-value {
+  margin: 1rem 0;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(3.2rem, 16vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: maroon;
+}
+
+.timer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.timer-actions button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.3rem;
+  background: peru;
+  color: floralWhite;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 18px sienna;
+}
+
+.timer-actions button:hover,
+.timer-actions button:focus-visible {
+  background: sienna;
+  outline: none;
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.1rem, 2.4vw, 1.7rem);
+  }
+
+  .site-nav {
+    margin-bottom: 2.25rem;
+  }
+
+  .mode-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.95rem 1.5rem;
+    border-radius: 999px;
+  }
+
+  .mode-button {
+    display: inline-block;
+    width: auto;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+  }
+
+  main {
+    padding: 0 1.5rem 2.5rem;
+  }
+
+  .timer-card {
+    padding: 2rem;
+    margin-top: -0.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .mode-button {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .timer-card {
+    max-width: 40rem;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>FocusFlow</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="site-nav" aria-label="Focus modes">
+            <ul class="mode-list">
+                <li><button class="mode-button is-active" type="button" data-mode="pomodoro">Pomodoro</button></li>
+                <li><button class="mode-button" type="button" data-mode="deep-focus">Deep Focus</button></li>
+                <li><button class="mode-button" type="button" data-mode="extreme-focus">Extreme Focus</button></li>
+            </ul>
+        </nav>
+
+        <h1>FocusFlow</h1>
+        <h2>
+            Increase your focus and
+            <br>
+            enter your flow state
+        </h2>
+    </header>
+
+    <main>
+        <section class="timer-card" aria-labelledby="timer-heading">
+            <h3 id="timer-heading">Focus Session</h3>
+            <p class="timer-label" id="modeName">Pomodoro</p>
+            <div class="timer-value" id="timeValue">25:00</div>
+            <p class="timer-state" id="timerState">Work</p>
+
+            <div class="timer-actions">
+                <button type="button" id="startPauseButton">Start</button>
+                <button type="button" id="resetButton">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
