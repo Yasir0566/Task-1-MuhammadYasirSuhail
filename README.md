@@ -62,6 +62,4 @@ This project is intentionally simple and dependency-free, making it easy to unde
 - Session history and statistics
 - Dark mode support
 
-## License
 
-This project is open for educational and personal use.
